@@ -1,71 +1,80 @@
+# Doodle Representation
+
 Introduction
 ============
 
-This package runs [Dudle](https://dudle.inf.tu-dresden.de/) as a [Docker container](https://www.docker.com/).
-
-Dudle stores data together with the code, which is a bit problematic from Docker point of view. This package contains 'scripts/maintenance/dudle-maint.sh' script that can be used to populate and back up polls to/from the container.
+This application is based on the [DuD-Poll](https://dud-poll.inf.tu-dresden.de/) software developed by the [Dresden University of Technology](https://tu-dresden.de/ing/informatik/sya/ps). The code was modified as a way to implement a user-testable version of Doodle for Harvard's CS279R.
 
 Installation
 ============
 
-Fetch Dudle sources, create the Docker image and a folder for backups:
+Doodle Representation uses a Docker container for distribution. Fetch Doodle Representation sources, create the Docker image and a folder for backups:
+    
+```console
+$ cd doodle-representation
+$ docker build -t my-dudle .
+```
 
-    # cd dudle-docker
-    # git clone https://github.com/kellerben/dudle.git cgi
-    # docker build -t my-dudle .
-    # mkdir -p /srv/dudle/backup
+Update the `scripts/maintenance/dudle-maint.sh` file:
 
-If you have an existing Dudle installation and and you want to copy polls to the new container:
+```bash
+run() {...
 
-    # cd /your/old/dudle
-    # tar cvfz /srv/dudle/backup/dudle-backup.tar.gz `find . -maxdepth 1 -type d | egrep -v '\./(extensions|locale|\.git|\.bzr|css)|^\.$' | xargs`
+${DOCKR} run -d -v {path to folder doodle-representation}/backup:/backup:Z ${TZ_PARAM} -p 8888:80 --name ${CONTAINER_NAME} my-dudle || exit 1
+}
+```
 
-If you want to customize your installation, add your CSS and artwork to 'skin/css/' and create/modify 'skin/conf/config.rb'. For more information on customization, see "Pimp your Installation" section in Dudle README.
+For example:
+```bash
+run() {...
+
+${DOCKR} run -d -v /Users/ekassos/doodle-representation/backup:/backup:Z ${TZ_PARAM} -p 8888:80 --name ${CONTAINER_NAME} my-dudle || exit 1
+}
+```
 
 Create and start the container:
+```console
+$ scripts/maintenance/dudle-maint.sh run
+```
 
-    # scripts/maintenance/dudle-maint.sh run
+Doodle Representation should be now running on port 8888.
 
-Dudle should be now running on port 8888.
+If you want to customize the installation, add the relevant CSS and artwork files to 'skin/css/' and modify 'skin/conf/config.rb'.
 
-If you want to co-locate Dudle with other services on port 80, you can use e.g. Apache httpd reverse proxy:
+License
+============
+The original unmodified sourcecode of this application is available under the terms of [AGPL Version 3](http://www.fsf.org/licensing/licenses/agpl-3.0.html). The sourcecode of this application can be found [here](https://github.com/kellerben/dudle/).
 
-    <VirtualHost *:80>
-      ServerName dudle.example.com
+Improvements
+============
 
-      CustomLog /var/log/httpd/access_dudle_log combined
+1. The distribution was not working right out of the box, so I fixed the docker file:
+    - CentOS 8 is no longer supported, so I updated the mirrors from:
 
-      # note: requires "setsebool -P httpd_can_network_connect 1" if Selinux is enabled
-      ProxyPreserveHost on
-      ProxyPass / http://localhost:8888/
-      ProxyPassReverse / http://localhost:8888/
-    </VirtualHost>
+        ```dockerfile
+        FROM centos:8
 
-Container backup
-================
+        RUN yum -y install httpd ruby ruby-devel git rubygems gcc make epel-release wget redhat-rpm-config
+        RUN gem install gettext iconv
+        RUN yum clean all
+        ```
+        to
+                
+        ```dockerfile
+        FROM centos
 
-Create an archive of all polls:
+        RUN cd /etc/yum.repos.d/
+        RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
+        RUN sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
+        
+        RUN yum -y install httpd ruby ruby-devel git rubygems gcc make epel-release wget redhat-rpm-config
+        RUN gem install gettext iconv
+        RUN yum clean all
+        ```
+    - Fixed backup file method, where Docker did not have permission to access `/srv/dudle/backup`.
 
-    scripts/maintenance/dudle-maint.sh backup
+1. Language was updated throughout the application to make it more user-friendly and similar to Doodle.
 
-The latest archive is '/srv/dudle/backup/dudle-backup.tar.gz'.
+1. New CSS stylesheet developed with Doodle branding.
 
-Container upgrade
-=================
-
-The following command updates all involved software:
-
-    scripts/maintenance/dudle-maint.sh upgrade
-
-A new image and a container are created by upgrading the base image (currently Centos 8), Dudle sources and Dudle Docker image scripts. All polls are backed up automatically before upgrade and restored afterwards.
-
-Other commands and parameters for dudle-maint.sh
-================================================
-
-* --podman: Use Podman instead of Docker
-* connect: Run a shell inside the container
-* start: Start the container
-* stop: Stop the container
-* restart: Stop+start the container
-* logs: See container log
-
+1. Functions and HTML presentation of forms was updated to better reflect the Doodle experience and to offer more guidance to users working their way through the app.
