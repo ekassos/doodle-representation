@@ -37,9 +37,15 @@ Create and start the container:
 $ scripts/maintenance/dudle-maint.sh run
 ```
 
-Doodle Representation should be now running on port 8888.
+### Doodle Representation should be now running on port 8888.
 
-If you want to customize the installation, add the relevant CSS and artwork files to 'skin/css/' and modify 'skin/conf/config.rb'.
+Customization
+============
+If you want to customize the installation, add the relevant CSS and artwork files to `skin/css/` and modify `skin/conf/config.rb`:
+```ruby
+$conf.default_css = "css/DoodleTheme.css"
+```
+with your preferred default theme.
 
 License
 ============
