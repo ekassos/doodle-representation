@@ -1,0 +1,864 @@
+# ###########################################################################
+# Copyright 2011 Gabor Kiss                                                #
+#                                                                          #
+# This file is part of Dudle.                                              #
+#                                                                          #
+# Dudle is free software: you can redistribute it and/or modify it under   #
+# the terms of the GNU Affero General Public License as published by       #
+# the Free Software Foundation, either version 3 of the License, or        #
+# (at your option) any later version.                                      #
+#                                                                          #
+# Dudle is distributed in the hope that it will be useful, but WITHOUT ANY #
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or        #
+# FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public     #
+# License for more details.                                                #
+#                                                                          #
+# You should have received a copy of the GNU Affero General Public License #
+# along with dudle.  If not, see <http://www.gnu.org/licenses/>.           #
+# ###########################################################################
+msgid ""
+msgstr ""
+"Project-Id-Version: 510\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-04 22:19+0200\n"
+"PO-Revision-Date: 2011-07-04 06:55+0200\n"
+"Last-Translator: Gabor Kiss <kissg@ssg.ki.iif.hu>\n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Poedit-Language: Hungarian\n"
+"X-Poedit-Country: HUNGARY\n"
+
+#: ../about.cgi:29
+msgid "This application is powered by %{DuDPoll}."
+msgstr ""
+
+#: ../about.cgi:31
+msgid "License"
+msgstr ""
+
+#: ../about.cgi:32
+msgid ""
+"The sourcecode of this application is available under the terms of <a "
+"href='http://www.fsf.org/licensing/licenses/agpl-3.0.html'>AGPL Version 3</"
+"a>."
+msgstr ""
+"Ezen program forráskódja hozzáférhető az <a href='http://www.fsf.org/"
+"licensing/licenses/agpl-3.0.html'>AGPLv3</a> alapján."
+
+#: ../about.cgi:33
+msgid "The sourcecode of this application can be found %{a_start}here%{a_end}."
+msgstr ""
+
+#: ../access_control.rb:74 ../customize.cgi:82 ../customize.rb:82
+msgid "Username:"
+msgstr "Név:"
+
+#: ../access_control.rb:87
+msgid "Password"
+msgstr "Jelszó"
+
+#: ../access_control.rb:88
+msgid "repeat"
+msgstr "még egyszer"
+
+#: ../access_control.rb:114
+msgid ""
+"You have to remove the participant user before you can remove the "
+"administrator."
+msgstr ""
+"Az adminisztrátori jelszót csak akkor törölheted, ha a részvételi jelszót "
+"már megszüntetted."
+
+#: ../access_control.rb:117 ../customize.cgi:119 ../customize.rb:119
+#: ../delete_poll.rb:112 ../poll.rb:340
+msgid "Delete"
+msgstr "Törlés"
+
+#: ../access_control.rb:121 ../customize.cgi:116 ../customize.rb:116
+#: ../poll.rb:302
+msgid "Save"
+msgstr "Mentés"
+
+#: ../access_control.rb:139
+msgid "Only letters and digits are allowed in the username."
+msgstr "A felhasználói névben csak betűk és számok lehetnek."
+
+#: ../access_control.rb:141
+msgid "Passwords did not match."
+msgstr "A két jelszó nem egyezik."
+
+#: ../access_control.rb:175
+msgid "Change access control settings"
+msgstr "A hozzáférési jelszavak beállása"
+
+#: ../access_control.rb:179
+msgid "not activated"
+msgstr "nincs"
+
+#: ../access_control.rb:181
+msgid "Activate"
+msgstr "Bekapcsolás"
+
+#: ../access_control.rb:184
+msgid "controls will be activated when at least the admin user is configured"
+msgstr "akkor lesz aktív, ha legalább az adminisztrátort bekonfigurálod"
+
+#: ../access_control.rb:186
+msgid "Deactivate"
+msgstr "Kikapcsolás"
+
+#: ../access_control.rb:188
+msgid "activated"
+msgstr "van"
+
+#: ../access_control.rb:189
+msgid ""
+"You have to remove all users before you can deactivate the access control "
+"settings."
+msgstr ""
+"A hozzáférés-szabályozás kikapcsolásához minden felhasználót törölni kell."
+
+#: ../access_control.rb:193
+msgid ""
+"You will be asked for the password you have entered here after you press "
+"save!"
+msgstr "A „Mentés” megnyomása után meg kell adnod a jelszót."
+
+#: ../access_control.rb:196
+#, fuzzy
+msgid ""
+"The user ‘admin’ has access to both the vote and the configuration interface."
+msgstr ""
+"Az ’admin’ felhasználó a szavazáshoz és a konfiguráló felülethez is hozzáfér."
+
+#: ../access_control.rb:202
+msgid "The user ‘participant’ only has access to the vote interface."
+msgstr "A ’participant’ felhasználó csak szavazhat."
+
+#: ../access_control.rb:208
+msgid "Access control:"
+msgstr "Hozzáférés-szabályozás:"
+
+#: ../advanced.rb:31 ../advanced.rb:35
+#, fuzzy
+msgid "Revert poll"
+msgstr "Szavazás törlése"
+
+#: ../advanced.rb:32
+#, fuzzy
+msgid "Poll was reverted to Version %{version}!"
+msgstr "A szavazás %{version}. verziója"
+
+#: ../advanced.rb:37
+msgid "Revert poll to version (see ‘History’ tab for revision numbers): "
+msgstr ""
+
+#: ../advanced.rb:39
+#, fuzzy
+msgid "Revert"
+msgstr "Szavazás törlése"
+
+#: ../authorization_required.cgi:36 ../authorization_required.cgi:52
+msgid "Authorization required"
+msgstr "Azonosítsd magad!"
+
+#: ../authorization_required.cgi:39
+msgid "The configuration of this poll is password-protected!"
+msgstr "A szavazás konfigurációját jelszó védi!"
+
+#: ../authorization_required.cgi:41
+msgid "This poll is password-protected!"
+msgstr "Jelszóval védett szavazás!"
+
+#: ../authorization_required.cgi:43
+msgid "In order to proceed, you have to give the password for user %{user}."
+msgstr "A továbblépéshez add meg a(z) %{user} felhasználó jelszavát!"
+
+#: ../authorization_required.cgi:53 ../not_found.cgi:36
+msgid "Return to DuD-Poll home and schedule a new poll"
+msgstr "Térj vissza a címlapra, hozz létre új szavazást"
+
+#: ../authorization_required.cgi:54
+msgid "You have to authorize yourself in order to access this page!"
+msgstr "Az oldal csak azonosítás után érhető el!"
+
+#: ../customize.cgi:31 ../customize.rb:31
+msgid "Customize personal settings"
+msgstr "Személyre szabás"
+
+#: ../customize.cgi:32 ../customize.rb:32
+#, fuzzy
+msgid ""
+"You need <a href='https://en.wikipedia.org/wiki/HTTP_cookie'>cookies</a> "
+"enabled in order to personalize your settings."
+msgstr ""
+"Engedélyezd a sütiket a böngésződben, hogy megmaradjanak a személyes "
+"beállításaid!"
+
+#: ../customize.cgi:39 ../customize.rb:39
+msgid "Current setting"
+msgstr "Aktuális állapot"
+
+#: ../customize.cgi:40 ../customize.rb:40
+msgid "Description"
+msgstr "Megnevezés"
+
+#: ../customize.cgi:57 ../customize.rb:57
+msgid "Use special characters"
+msgstr "Különleges karakterek használata"
+
+#: ../customize.cgi:57 ../customize.rb:57
+msgid "Use this option if you see the characters in the parenthesis."
+msgstr ""
+"Csak akkor állítsd be, ha látod a zárójelben lévő speciális karaktereket."
+
+#: ../customize.cgi:58 ../customize.rb:58
+msgid "Use only normal strings"
+msgstr "Csak a szokványos karakterek használata."
+
+#: ../customize.cgi:58 ../customize.rb:58
+msgid "Use this option if you have problems with some characters."
+msgstr ""
+"Ezt állítsd be, ha bizonyos karakterek megjelenítésével gondjaid vannak."
+
+#: ../customize.cgi:61 ../customize.rb:61
+msgid "Charset"
+msgstr "Karakterkészlet"
+
+#: ../customize.cgi:66 ../customize.rb:66
+msgid "Stylesheet"
+msgstr "Stíluslap"
+
+#: ../customize.cgi:81 ../customize.rb:81
+msgid "Default Username"
+msgstr "Alap felhasználónév"
+
+#: ../customize.cgi:106 ../customize.rb:106
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: ../delete_poll.rb:30
+msgid "Yes, I know what I am doing!"
+msgstr "Igen, pontosan tudom mit csinálok!"
+
+#: ../delete_poll.rb:31
+msgid "I hate these stupid entry fields."
+msgstr "Torkig vagyok ezekkel a hülye kérdésekkel."
+
+#: ../delete_poll.rb:32
+msgid "I am aware of the consequences."
+msgstr "Tudatában vagyok a következményeknek."
+
+#: ../delete_poll.rb:33
+msgid "Please delete this poll."
+msgstr "Töröld ezt a szavazást!"
+
+#: ../delete_poll.rb:42
+msgid "Example polls cannot be deleted."
+msgstr ""
+
+#: ../delete_poll.rb:43
+msgid "You should never see this text."
+msgstr ""
+
+#: ../delete_poll.rb:56
+msgid "The poll was deleted successfully!"
+msgstr "A szavazás törölve."
+
+#: ../delete_poll.rb:57
+#, fuzzy
+msgid ""
+"If this was done by accident, please contact the administrator of the "
+"system. The poll can be recovered for an indeterminate amount of time; it "
+"could already be too late."
+msgstr ""
+"Ha véletlenül törölted, hamar lépj kapcsolatba az adminisztrátorral! Talán "
+"még nem késő, és helyre lehet állítani."
+
+#: ../delete_poll.rb:59
+msgid "You can now"
+msgstr ""
+
+#: ../delete_poll.rb:61
+msgid "Browse Wikipedia"
+msgstr "Nézelődj a Wikipédiában"
+
+#: ../delete_poll.rb:62
+#, fuzzy
+msgid "Search for something on the Internet"
+msgstr "Keressgélj a Google-ban"
+
+#: ../delete_poll.rb:88
+msgid "To delete the poll, you have to type:"
+msgstr "A szavazás törléséhez ezt kell begépelned:"
+
+#: ../delete_poll.rb:96
+msgid "but you typed:"
+msgstr "de ezt írtad:"
+
+#: ../delete_poll.rb:108
+msgid "Delete this poll"
+msgstr "Szavazás törlése"
+
+#: ../delete_poll.rb:109
+msgid "You want to delete the poll named"
+msgstr "Ki akarod törölni ezt a szavazást: "
+
+#: ../delete_poll.rb:110
+msgid "This is an irreversible action!"
+msgstr "Ezt a műveletet nem lehet visszafordítani."
+
+#: ../delete_poll.rb:111
+#, fuzzy
+msgid ""
+"If you are sure that you want to permanently remove this poll, please type "
+"“%{question}” into the form."
+msgstr ""
+"Ha teljesen biztos vagy a dolgodban gépeld be a „%{question}” szöveget."
+
+#: ../dudle.rb:73
+msgid "Home"
+msgstr "Címlap"
+
+#: ../dudle.rb:76
+msgid "Poll"
+msgstr "Szavazás"
+
+#: ../dudle.rb:77 ../history.rb:35
+msgid "History"
+msgstr "Történet"
+
+#: ../dudle.rb:80
+msgid "Edit Columns"
+msgstr "Oszlopok módosítása"
+
+#: ../dudle.rb:81 ../invite_participants.rb:38
+msgid "Invite Participants"
+msgstr "Végy fel résztvevőket"
+
+#: ../dudle.rb:82
+msgid "Access Control"
+msgstr "Hozzáférés-szabályozás"
+
+#: ../dudle.rb:83
+msgid "Overview"
+msgstr "Végső teendők"
+
+#: ../dudle.rb:86
+msgid "Delete Poll"
+msgstr "Szavazás törlése"
+
+#: ../dudle.rb:89 ../example.cgi:67
+msgid "Examples"
+msgstr "Példák"
+
+#: ../dudle.rb:90
+msgid "About"
+msgstr "A programról"
+
+#: ../dudle.rb:92
+msgid "Customize"
+msgstr "Személyes beállítások"
+
+#: ../dudle.rb:100
+msgid "DuD-Poll Home"
+msgstr "Címlap"
+
+#: ../dudle.rb:208 ../dudle.rb:226
+msgid "Previous"
+msgstr "Vissza"
+
+#: ../dudle.rb:209 ../dudle.rb:227
+msgid "Next"
+msgstr "Tovább"
+
+#: ../dudle.rb:210 ../dudle.rb:228
+msgid "Finish"
+msgstr "Befejezés"
+
+#: ../dudle.rb:233
+msgid "All changes were saved successfully."
+msgstr "A változtatások elmentve."
+
+#: ../dudle.rb:233
+msgid "Proceed!"
+msgstr "Végrehajtás"
+
+#: ../dudle.rb:282
+#, fuzzy
+msgid "Select Language"
+msgstr "Kiválasztva"
+
+#: ../edit_columns.rb:44
+msgid "Add and remove columns"
+msgstr "Oszlopok hozzáadása és törlése"
+
+#: ../edit_columns.rb:67 ../edit_columns.rb:86 ../timepollhead.rb:249
+msgid "Delete column"
+msgstr "Oszlop törlése"
+
+#: ../edit_columns.rb:69 ../edit_columns.rb:84 ../timepollhead.rb:248
+msgid "Add column"
+msgstr "Új oszlop"
+
+#: ../edit_columns.rb:71 ../edit_columns.rb:88
+msgid "Edit column"
+msgstr "Oszlop módosítása"
+
+#: ../edit_columns.rb:99
+msgid "Undo"
+msgstr "Mégsem"
+
+#: ../edit_columns.rb:99
+msgid "Redo"
+msgstr "De mégis"
+
+#: ../error.cgi:25 ../error.cgi:27
+msgid "Error"
+msgstr "Hiba"
+
+#: ../error.cgi:41
+msgid "The following error was printed:"
+msgstr "Az alábbi hibaüzenet jelent meg:"
+
+#: ../error.cgi:45
+msgid ""
+"Hi!\n"
+"\n"
+"I found a bug in your application at %{urlofsite}.\n"
+"I did the following:\n"
+"\n"
+"<please describe what you did>\n"
+"<e.g., I wanted to post a comment to the poll.>\n"
+"\n"
+"I am using <please state your browser and operating system>\n"
+"%{errormessage}\n"
+"Sincerely,\n"
+msgstr ""
+
+#: ../error.cgi:46
+msgid "Bug in DuD-Poll"
+msgstr "DuD-Poll hiba"
+
+#: ../error.cgi:48
+msgid ""
+"An error occurred while executing DuD-Poll.<br/>Please send an error report, "
+"including your browser, operating system, and what you did to %{admin}."
+msgstr ""
+"Hiba történt a DuD-Poll futása közben.<br/>Küldj kérlek egy hibajelentést a(z) "
+"%{admin} címre, mely tartalmazza a böngésződ és az operációs rendszered "
+"adatait, valamint hogy mit csináltál!"
+
+#: ../error.cgi:51
+msgid "Please include the following as well:"
+msgstr "Vedd bele a következőket is:"
+
+#: ../example.cgi:60
+msgid "Example not found: %{example}"
+msgstr ""
+
+#: ../example.cgi:68
+msgid ""
+"If you want to play with the application, you may want to take a look at "
+"these example polls:"
+msgstr "Bátran próbálgasd a programot! Van itt néhány próbaszavazás:"
+
+#: ../history.rb:28
+msgid "Poll of version %{revisionnumber}"
+msgstr "A szavazás %{revisionnumber}. verziója"
+
+#: ../history.rb:32
+msgid "Current poll (version %{revisionnumber})"
+msgstr "A szavazás aktuális állása (%{revisionnumber}. verzió)"
+
+#: ../html.rb:131
+msgid "xml:lang='en' dir='ltr'"
+msgstr "xml:lang='hu' dir='ltr'"
+
+#: ../index.cgi:32
+msgid "Please enter a descriptive title."
+msgstr "Adj valamilyen címet a szavazásnak!"
+
+#: ../index.cgi:43
+msgid "Custom address may only contain letters, numbers, and dashes."
+msgstr ""
+"Az URL-be csak ékezet nélküli betűket, valamint számokat és kötőjelet "
+"írhatsz."
+
+#: ../index.cgi:45
+msgid "A poll with this address already exists."
+msgstr "Ezen a neven már létezik egy szavazás."
+
+#: ../index.cgi:63
+msgid ""
+"The poll was created successfully. The link to your new poll is: %{link}"
+msgstr "A szavazás sikeresen létrejött. Ezen a linken lehet elérni: %{link}"
+
+#: ../index.cgi:71
+msgid "Go away."
+msgstr ""
+
+#: ../index.cgi:79
+msgid "Create new poll"
+msgstr "Új szavazás létrehozása"
+
+#: ../index.cgi:81
+msgid "Title"
+msgstr "Cím"
+
+#: ../index.cgi:82
+msgid "Type"
+msgstr "Típus"
+
+#: ../index.cgi:83
+msgid "Event-scheduling poll (e.&thinsp;g., schedule a meeting)"
+msgstr "Időpont kiválasztása (pl. egy értekezlet beütemezése)"
+
+#: ../index.cgi:84
+msgid "Normal poll (e.&thinsp;g., vote for what is the best coffee)"
+msgstr "Normál szavazás (pl. melyik a legfinomabb süti)"
+
+#: ../index.cgi:85
+msgid "Custom address (optional)"
+msgstr "Testre szabott URL (opcionális)"
+
+#: ../index.cgi:86
+msgid "May contain letters, numbers, and dashes."
+msgstr "Betűket, számokat, kötőjelet, aláhúzást tartalmazhat."
+
+#: ../index.cgi:88
+msgid "Create"
+msgstr "Létrehozás"
+
+#: ../log.rb:111
+msgid "Version"
+msgstr "Verzió"
+
+#: ../log.rb:111
+msgid "Date"
+msgstr "Dátum"
+
+#: ../log.rb:111
+msgid "Comment"
+msgstr "Esemény"
+
+#: ../maintenance.cgi:25 ../maintenance.cgi:27
+msgid "Maintenance"
+msgstr ""
+
+#: ../maintenance.cgi:31
+msgid "This site is currently undergoing maintenance!"
+msgstr ""
+
+#: ../maintenance.cgi:34
+msgid ""
+"You should not browse to this file directly. Please create a file named "
+"\"maintenance.html\" to enable the maintenance mode."
+msgstr ""
+
+#: ../not_found.cgi:30
+msgid "Poll not found"
+msgstr "Nincs ilyen szavazás"
+
+#: ../not_found.cgi:32
+msgid "The requested poll was not found."
+msgstr "A megadott szavazás nem létezik."
+
+#: ../not_found.cgi:33
+msgid "There are several reasons why a poll may have been deleted:"
+msgstr "Több okból is eltűnhetett a szavazás:"
+
+#: ../not_found.cgi:34
+msgid "Somebody clicked on “Delete poll” and deleted the poll manually."
+msgstr "Valaki a „Törlés” linkre kattintott, és kitörölte a szavazást."
+
+#: ../not_found.cgi:35
+#, fuzzy
+msgid ""
+"The poll was deleted by the administrator because it was not accessed for a "
+"long time."
+msgstr ""
+"A szavazást az adminisztrátor törölte, mert már régóta nem nézett rá senki."
+
+#: ../overview.rb:31
+msgid "The next steps are:"
+msgstr "Már csak annyi dolgod van, hogy"
+
+#: ../overview.rb:33
+msgid "Send the link to all participants:"
+msgstr "Küldd el a linket a résztvevőknek:"
+
+#: ../overview.rb:34
+msgid "Send this link via email..."
+msgstr "A link küldése levélben…"
+
+#: ../overview.rb:35
+msgid "Visit the poll yourself:"
+msgstr "Kövesd a linket és menj a szavazáshoz:"
+
+#: ../overview.rb:36
+msgid "Link to DuD-Poll about %{polltitle}"
+msgstr "A %{polltitle} tárgyú szavazásra mutató link"
+
+#: ../participate.rb:59
+msgid "The changes were saved, you should be redirected to %{link}."
+msgstr "Sikeresen elmentve. A folytatáshoz kattints ide: %{link}."
+
+#: ../poll.rb:96
+msgid "Edit user %{user}..."
+msgstr "%{user} felhasználó módosítása…"
+
+#: ../poll.rb:100
+msgid "Delete user %{user}..."
+msgstr "%{user} felhasználó törlése…"
+
+#: ../poll.rb:154
+msgid "Total"
+msgstr "Összesen"
+
+#: ../poll.rb:186
+msgid "Invite"
+msgstr "Hozzáadás"
+
+#: ../poll.rb:187 ../pollhead.rb:62 ../timepollhead.rb:158
+msgid "Name"
+msgstr "Név"
+
+#: ../poll.rb:229
+#, fuzzy
+msgid "Add a participant"
+msgstr "Végy fel résztvevőket"
+
+#: ../poll.rb:233
+msgid "Save changes"
+msgstr "Mentés"
+
+#: ../poll.rb:237
+msgid "Cancel"
+msgstr "Mégsem"
+
+#: ../poll.rb:259
+msgid "Do you really want to delete user %{user}?"
+msgstr "Valóban törölni akarod „%{user}” felhasználót?"
+
+#: ../poll.rb:262
+msgid "Confirm"
+msgstr "Megerősítés"
+
+#: ../poll.rb:283
+msgid "Yes"
+msgstr ""
+
+#: ../poll.rb:283
+msgid "No"
+msgstr ""
+
+#: ../poll.rb:283
+msgid "Maybe"
+msgstr ""
+
+#: ../poll.rb:311
+msgid "Comments"
+msgstr "Megjegyzések"
+
+#: ../poll.rb:314
+msgid "Sort oldest comment first"
+msgstr "Időrendben"
+
+#: ../poll.rb:317
+msgid "Sort newest comment first"
+msgstr "Fordított Időrendben"
+
+#: ../poll.rb:322
+msgid "Go to last comment"
+msgstr "Ugrás az utolsó megjegyzéshez"
+
+#: ../poll.rb:335
+msgid "%{user} said on %{time}"
+msgstr "„%{user}” írta %{time}-kor"
+
+#: ../poll.rb:350
+msgid "Go up"
+msgstr "Fel"
+
+#: ../poll.rb:356
+msgid "says"
+msgstr "szerint"
+
+#: ../poll.rb:357
+msgid "Submit comment"
+msgstr "Hozzászólás elküldése"
+
+#: ../poll.rb:361
+msgid "Enter your name"
+msgstr ""
+
+#: ../poll.rb:363
+#, fuzzy
+msgid "Enter a comment"
+msgstr "Ugrás az utolsó megjegyzéshez"
+
+#: ../poll.rb:375
+msgid "Show history items:"
+msgstr "Megjelenítendő változtatások:"
+
+#: ../poll.rb:382
+msgid "All"
+msgstr "Mindegyik"
+
+#: ../poll.rb:383
+msgid "Participant related"
+msgstr "A szavazókkal kapcsolatosak"
+
+#: ../poll.rb:384
+msgid "Column related"
+msgstr "Az oszlopokkal kapcsolatosak"
+
+#: ../poll.rb:385
+msgid "Comment related"
+msgstr "A megjegyzésekkel kapcsolatosak"
+
+#: ../poll.rb:386
+msgid "Access control related"
+msgstr "A hozzáféréssel kapcsolatosak"
+
+#: ../poll.rb:392
+msgid "Update"
+msgstr "Frissítés"
+
+#: ../pollhead.rb:71
+msgid "Edit option"
+msgstr "Lehetőség szerkesztése"
+
+#: ../pollhead.rb:72
+msgid "Delete option"
+msgstr "Lehetőség törlése"
+
+#: ../pollhead.rb:87 ../timepollhead.rb:162
+msgid "Last edit"
+msgstr "Módosítva"
+
+#: ../pollhead.rb:99
+msgid "Option"
+msgstr "Lehetőség"
+
+#: ../pollhead.rb:100
+msgid "Description (optional)"
+msgstr "Leírás (opcionális)"
+
+#: ../pollhead.rb:101
+msgid "Add/Edit option"
+msgstr "Létrehozás/Módosítás"
+
+#: ../pollhead.rb:102
+msgid "Preview"
+msgstr "Előnézet"
+
+#: ../pollhead.rb:103
+msgid ""
+"Enter all the options (columns) which you want the participants of the poll "
+"to choose among. For each option you give here, the participants will choose "
+"a vote."
+msgstr ""
+"Add meg az összes lehetőséget (oszlopot), melyre a résztvevők szavazhatnak! "
+"(Mindegyikre a többitől függetlenül lehet szavazni.)"
+
+#: ../timepollhead.rb:113
+msgid ""
+"To add a time other than the default times, please enter some string here (e."
+"&thinsp;g., 09:30, morning, afternoon)."
+msgstr ""
+"A szokásostól eltérő sorok hozzáadásához írj be valamilyen szöveget a fenti "
+"mezőbe! (Pl. 09:30, reggel, délután)"
+
+#: ../timepollhead.rb:119
+msgid "This time has already been selected."
+msgstr "Ez az idő már szerepel"
+
+#: ../timepollhead.rb:193
+msgid "Earlier"
+msgstr "Korábbi"
+
+#: ../timepollhead.rb:198
+msgid "Later"
+msgstr "Későbbi"
+
+#: ../timepollhead.rb:265
+msgid "Click on the dates to add or remove columns."
+msgstr "Kattints a dátumokra oszlopok hozzáadása vagy törlése céljából!"
+
+#: ../timepollhead.rb:313
+msgid "Optional:"
+msgstr "Esetlegesen:"
+
+#: ../timepollhead.rb:314
+msgid "Select specific start times."
+msgstr "Adj meg egy konkrét kezdőidőt!"
+
+#: ../timepollhead.rb:330
+msgid "Time"
+msgstr "Idő"
+
+#: ../timepollhead.rb:343
+msgid "Selected"
+msgstr "Kiválasztva"
+
+#: ../timepollhead.rb:344
+msgid "Not selected"
+msgstr "Elvetve"
+
+#: ../timepollhead.rb:345
+msgid "Past"
+msgstr "Elmúlt"
+
+#: ../timepollhead.rb:379
+msgid "Select the whole row"
+msgstr "Sor kijelölése"
+
+#: ../timepollhead.rb:384
+msgid "Deselect the whole row"
+msgstr "Kijelölés törlése (sor)"
+
+#: ../timepollhead.rb:428
+msgid "Add"
+msgstr "Hozzáadás"
+
+#: ../timepollhead.rb:429
+msgid "e.&thinsp;g., 09:30, morning, afternoon"
+msgstr "pl. 09:30, reggel, délután"
+
+#, fuzzy
+#~ msgid ""
+#~ "Please write me an e-mail if you have found a bug, have found something "
+#~ "which disturbs you, or have any other feedback."
+#~ msgstr ""
+#~ "Ha bármi hibát, hiányosságot, fennakadást tapasztalsz, jelezd a "
+#~ "szerzőnek: <a href=\"mailto:Benjamin_pont_Kellermann@gmx_pont_németország?"
+#~ "subject=Dudle%20Feedback\">Visszajelzés</a>"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you think that the deletion was done in error, please contact the "
+#~ "administrator of the system."
+#~ msgstr ""
+#~ "Ha szerinted valami hiba történt, lépj kapcsolatba az adminisztrátorral!"
+
+#~ msgid "Event-scheduling poll"
+#~ msgstr "Időpontválasztás"
+
+#~ msgid "Normal poll"
+#~ msgstr "Normál szavazás"
+
+#~ msgid "Things you can do now are"
+#~ msgstr "Milyen lehetőségeid vannak?"
+
+#~ msgid ""
+#~ "You can get the sourcecode, using <a href='http://bazaar-vcs."
+#~ "org/'>bazaar</a>:"
+#~ msgstr ""
+#~ "A forráskódot innen töltheted le a <a href='http://bazaar-vcs."
+#~ "org/'>bazaar</a> programmal:"

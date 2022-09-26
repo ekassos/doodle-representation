@@ -1,0 +1,152 @@
+/***************************************************************************
+* Copyright 2009-2019 Benjamin Kellermann                                  *
+*                                                                          *
+* This file is part of Dudle.                                              *
+*                                                                          *
+* Dudle is free software: you can redistribute it and/or modify it under   *
+* the terms of the GNU Affero General Public License as published by       *
+* the Free Software Foundation, either version 3 of the License, or        *
+* (at your option) any later version.                                      *
+*                                                                          *
+* Dudle is distributed in the hope that it will be useful, but WITHOUT ANY *
+* WARRANTY; without even the implied warranty of MERCHANTABILITY or        *
+* FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public     *
+* License for more details.                                                *
+*                                                                          *
+* You should have received a copy of the GNU Affero General Public License *
+* along with dudle.  If not, see <http://www.gnu.org/licenses/>.           *
+***************************************************************************/
+
+@page {
+	size: landscape;
+}
+
+.invisible {
+	visibility: hidden;
+}
+th.invisible,
+td.invisible{
+	border-style: none;
+}
+
+tr.participantrow td:first-child {
+	border-right-style: none;
+}
+tr.participantrow td.name {
+	border-left-style: none;
+}
+
+
+td.match_100{ background-color: #99cc66 !important; }
+td.match_90 { background-color: #add666 !important; }
+td.match_80 { background-color: #c1e066 !important; }
+td.match_70 { background-color: #d6ea66 !important; }
+td.match_60 { background-color: #eaf466 !important; }
+td.match_50 { background-color: #ffff66 !important; }
+td.match_40 { background-color: #FFea66 !important; }
+td.match_30 { background-color: #FFd666 !important; }
+td.match_20 { background-color: #FFc166 !important; }
+td.match_10 { background-color: #FFad66 !important; }
+td.match_0  { background-color: #FF9966 !important; }
+
+td.a_yes__, input.chosen  { background-color:#9c6; }
+td.c_no___ { background-color:#F96; }
+td.b_maybe { background-color:#FF6; }
+td.undecided { background-color:#DDD;color:#666 }
+
+td.name {
+	text-align:right;
+}
+
+td.name a,td.name a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+#active {
+	background-color:#A00;
+}
+
+th.weekday{
+	width: 2.5em;
+}
+
+input.navigation, input.disabled, input.chosen, input.notchosen {
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+input.navigation {
+	color: white;
+	background-color: black;
+}
+
+input.disabled { background-color:#DDD;color:#BBB}
+td.calendarday{
+	border: 1px;
+	padding: 0px;
+	margin: 0px;
+}
+
+table {
+	border: none;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+td.create_poll{
+	text-align:left;
+}
+
+td {
+	vertical-align:middle;
+	text-align:center;
+	padding: 1px 3px;
+	border-width: 1px;
+	border-style: dotted;
+}
+
+td.polls {
+	text-align:left;
+}
+
+div#add_comment,div#edit_column, div#history, div#backlink, input.delete_comment_button, tr#add_participant, div#configlink, div#tabs, p#history, span.edituser, span.sortsymb, div#languageChooser, input[type=submit], div#breadcrumbs, a.comment_sort, a.top_bottom_ref {
+	display: none;
+}
+
+th {
+	padding: 1px 3px;
+	font-weight: normal;
+	border-width: 1px;
+	border-style: dotted;
+}
+
+th a{
+	text-decoration: none;
+	color: black;
+}
+
+td.date {
+	text-align: left;
+}
+
+
+pre#configwarning {
+	font-family:"Courier New",Courier,monospace;
+	letter-spacing:0;
+	margin-top: -12ex;
+	line-height:95%;
+	margin-left: -2ex;
+}
+
+
+h1 {
+	text-align: center;
+}
+
+
+div.comment { margin-top: 1ex; }
